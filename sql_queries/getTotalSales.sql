@@ -1,0 +1,1 @@
+select sum(sale_price) as total_sales from orders ;

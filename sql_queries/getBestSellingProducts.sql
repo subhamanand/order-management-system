@@ -1,0 +1,1 @@
+select product_name,count(*) as quantity,sum(sale_price) as total_amount from orders where order_date > now() - INTERVAL 7 day group by product_name order by quantity desc limit 20;

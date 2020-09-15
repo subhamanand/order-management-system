@@ -1,0 +1,1 @@
+select DATE_FORMAT(order_date, '%M-%Y') as month,round(sum(sale_price),2) as sales from orders where order_date > now() - INTERVAL 3 month group by DATE_FORMAT(order_date, '%M-%Y');

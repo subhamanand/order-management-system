@@ -1,0 +1,1 @@
+select product_name from products where expiry<now();

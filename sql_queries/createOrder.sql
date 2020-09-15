@@ -1,0 +1,1 @@
+INSERT INTO `orders` (`product_name`, `order_date`, `sale_price`) VALUES ('%s','%s','%s');

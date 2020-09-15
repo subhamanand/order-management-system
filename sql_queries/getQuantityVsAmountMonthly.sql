@@ -1,0 +1,1 @@
+select DATE_FORMAT(order_date, '%M-%Y') as month,round(sum(sale_price),2) as sales,count(*) as quantity from orders group by DATE_FORMAT(order_date, '%M-%Y');

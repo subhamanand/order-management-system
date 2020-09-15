@@ -1,0 +1,1 @@
+(select sum(sale_price) as data from orders) union (select product_name from orders group by product_name order by count(*) desc limit 1) union (select product_name from orders group by product_name order by count(*) asc limit 1);

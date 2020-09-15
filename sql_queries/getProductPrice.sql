@@ -1,0 +1,1 @@
+select price from products where product_name='%s';
